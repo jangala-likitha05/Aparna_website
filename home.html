@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://amazingarchitecture.com/storage/2861/urban_oasis-_gated_community_living_housing_the_grid_architects.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 110vh; /* Set body height to 110% of viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative; /* Set body to relative position */
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.475); /* Adjust the alpha value to change transparency */
+      z-index: -1; /* Ensure the overlay is behind other content */
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0000017d!important; /* Set navbar background to transparent */
+      z-index: 1000; /* Ensure the navbar is on top of other content */
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #28a745;
+    }
+
+    .dropdown-menu {
+      background-color: #0000017d; /* Set dropdown background to transparent */
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: #fff; /* Set text color in the dropdown to white */
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #28a745; /* Green background color on hover */
+      color: #fff; /* White text color on hover */
+    }
+
+    .text-content {
+      max-width: 70%;
+      color: #fff;
+      text-align: center;
+      position: absolute; /* Position text-content absolutely */
+      top: calc(50% + 50px); /* Position it in the middle below the navbar */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      animation: fadeIn 5s forwards;
+    }
+
+    .why-choose-us-para {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px; /* Adjust the margin-top as needed */
+    }
+
+    .why-choose-us-para li {
+      color: #fff;
+      opacity: 0; /* Initially set opacity to 0 */
+      animation: fadeInList 2s forwards; /* Apply animation to each list item */
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInList {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+<br/><br/>
+<br/>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="https://newprojects.99acres.com/projects/aparna_construction/aparna_kanopy/logo_naya.jpg" alt="Logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto"> <!-- ml-auto aligns items to the right -->
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <!-- Dropdown menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+          <a class="dropdown-item" href="aboutsocity.html">About Society</a>
+          <a class="dropdown-item" href="aboutsocity.html">Management Committee</a>
+          <a class="dropdown-item" href="aboutsocity.html">Block Representatives</a>
+        </div>
+      </li>
+      <!-- End dropdown menu -->
+      <!-- Contact dropdown -->
+      
+      <!-- End Contact dropdown -->
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="happenings.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Happenings
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="newss.html">News & Circulars</a>
+            <a class="dropdown-item" href="photra.html"> Photo Gallery</a>
+        </div>
+    </div>
+    <div class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="documents.html" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Documents
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="documents.html">Bye-Laws</a>
+          <a class="dropdown-item" href="documents.html">Rules & Guidelines</a>
+          <a class="dropdown-item" href="documents.html">SOPs</a>
+          <a class="dropdown-item" href="documents.html">New to Society</a>
+          <a class="dropdown-item" href="documents.html">Downloads </a>
+      </div>
+  </div>
+      <li class="nav-item">
+        <a class="nav-link" href="facilities.html">Facilities</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact
+        </a>
+        <div class="dropdown-menu" aria-labelledby="contactDropdown">
+          <a class="dropdown-item" href="contact.html">Directory</a>
+          <a class="dropdown-item" href="contact.html">Location Map</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="rentals.html">Classifieds</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<div class="text-content">
+  <h1>Welcome to our Home Page</h1>
+  <p>
+    Imagine stepping into a vibrant community crafted for modern living. Our spacious residences offer
+    the perfect blend of comfort and style, while the surrounding landscaped gardens and extensive
+    clubhouse create an oasis of relaxation. With well-regarded schools and hospitals nearby, your
+    everyday needs are taken care of. Aparna Kanopy Tulip puts you at the heart of it all, close to
+    Gundlapochampalli station for seamless connectivity. Don't miss out on this opportunity to elevate
+    your lifestyle - explore your dream home at Aparna Kanopy Tulip today.
+  </p>
+  <ul class="why-choose-us-para">
+    <p class="why-choose-us"><b>Why Aparna Kanopy Tulip?</b></p>
+    <li>Rainwater harvesting are some of the prominent amenities</li>
+    <li>Schools, hospitals in close vicinity</li>
+    <li>1.14k sq.m clubhouse extensive land</li>
+    <li>Extensive landscaped parks</li>
+    <li>Close to gundlapochampally railway station</li>
+  </ul>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

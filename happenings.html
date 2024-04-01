@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://amazingarchitecture.com/storage/2861/urban_oasis-_gated_community_living_housing_the_grid_architects.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      overflow-x: hidden; /* Add this line to hide horizontal overflow */
+      background-attachment: fixed; /* Keep the background image fixed */
+      background-color: rgb(0, 0, 0); /* Grey color overlay */
+    }
+    body::before {
+  content: "";
+  position: fixed; /* Change position to fixed */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width */
+  height: 100vh; /* Use viewport height */
+  background-color: rgba(0, 0, 0, 0.475); /* Adjust the alpha value to change transparency */
+  z-index: -1; /* Ensure the overlay is behind other content */
+}
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0000017d !important; /* Set navbar background color */
+      z-index: 1000;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #28a745;
+    }
+
+    .dropdown-menu {
+      background-color: #0000017d;
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: #fff;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 100px; /* Adjust margin to avoid overlap with navbar */
+    }
+
+    .card-hover {
+  width: 360px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 32px -10px rgba(0,0,0,0.08);
+}
+
+.card-hover:hover .card-hover__content {
+  background-color: #DEE8C2;
+  bottom: 100%;
+  transform: translateY(100%);
+  padding: 50px 60px;
+}
+
+.card-hover:hover .card-hover__link {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.card-hover:hover img {
+  transform: scale(1);
+}
+
+.card-hover:hover .card-hover__extra {
+  transform: translateY(0);
+}
+
+.card-hover__content {
+  width: 100%;
+  text-align: center;
+  background-color: #86B971;
+  padding: 0 60px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  will-change: bottom, background-color, transform, padding;
+  z-index: 1;
+}
+
+.card-hover__content::before,
+.card-hover__content::after {
+  content: '';
+  width: 100%;
+  height: 120px;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.card-hover__content::before {
+  top: -80px;
+  clip-path: ellipse(60% 80px at bottom center);
+}
+
+.card-hover__content::after {
+  bottom: -80px;
+  clip-path: ellipse(60% 80px at top center);
+}
+
+.card-hover__title {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.card-hover__title span {
+  color: #2d7f0b;
+}
+
+.card-hover__text {
+  font-size: 0.75rem;
+}
+
+.card-hover__link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  color: #2d7f0b;
+  opacity: 0;
+  padding: 10px;
+}
+
+.card-hover__link:hover svg {
+  transform: translateX(4px);
+}
+
+.card-hover__link svg {
+  width: 18px;
+  margin-left: 4px;
+}
+
+.card-hover__extra {
+  height: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #86b971;
+  padding: 80px;
+  bottom: 0;
+  z-index: 0;
+  color: #dee8c2;
+  transform: translateY(100%);
+}
+
+.card-hover__extra span {
+  color: #2d7f0b;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  transform: scale(1.2);
+}
+.navbar-brand img {
+    max-height: 30px; /* Set the maximum height of the logo */
+    width: auto; /* Ensure the width adjusts automatically */
+  }
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="https://newprojects.99acres.com/projects/aparna_construction/aparna_kanopy/logo_naya.jpg" alt="Logo"></a> <!-- Replace 'your-logo-url.jpg' with your logo URL -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="aboutsocity.html">About Society</a>
+            <a class="dropdown-item" href="aboutsocity.html">Management Committee</a>
+            <a class="dropdown-item" href="aboutsocity.html">Block Representatives</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="happenings.html" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Happenings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="newss.html">News & Circulars</a>
+              <a class="dropdown-item" href="happenings.html"> Photo Gallery</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="documents.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Documents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="documents.html">Bye-Laws</a>
+            <a class="dropdown-item" href="documents.html">Rules & Guidelines</a>
+            <a class="dropdown-item" href="documents.html">SOPs</a>
+            <a class="dropdown-item" href="documents.html">New to Society</a>
+            <a class="dropdown-item" href="documents.html">Downloads </a>
+        </div>
+    </li>
+        <li class="nav-item">
+          <a class="nav-link" href="report_issue.html">Facilities</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="contactDropdown">
+            <a class="dropdown-item" href="contact.html">Directory</a>
+            <a class="dropdown-item" href="contact.html">Location Map</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Row container for the news cards -->
+  <div class="row">
+    <!-- Replace existing card with provided card -->
+    <div class="cards">
+      <div class="card-hover">
+        <div class="card-hover__content">
+          <h3 class="card-hover__title">
+            Make your <span>choice</span> right now!
+          </h3>
+          <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+          <a href="#" class="card-hover__link">
+            <span>Learn How</span>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>        
+          </a>
+        </div>
+        <div class="card-hover__extra">
+          <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+        </div>
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Carousel styles */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+    html, body {
+      color: white;
+      background-color: rgb(30, 30, 35);
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+    }
+
+    h1 {
+      margin-top: 50px;
+      margin-bottom: 0;
+      text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      margin: 0;
+      opacity: 0.4;
+    }
+
+    .line {
+      width: 100%;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Carousel styles continue... */
+
+    /* Add the carousel styles here */
+  </style>
+</head>
+<body>
+  <!-- Navbar code... -->
+
+  <!-- Updated carousel section -->
+  <div class="center">
+    <div class="carousel-wrapper">
+      <!-- abstract radio buttons for slides -->
+      <input id="slide1" type="radio" name="controls" checked="checked" />
+      <input id="slide2" type="radio" name="controls" />
+      <input id="slide3" type="radio" name="controls" />
+      <input id="slide4" type="radio" name="controls" />
+      <input id="slide5" type="radio" name="controls" />
+
+      <!-- navigation dots -->
+      <label for="slide1" class="nav-dot"></label>
+      <label for="slide2" class="nav-dot"></label>
+      <label for="slide3" class="nav-dot"></label>
+      <label for="slide4" class="nav-dot"></label>
+      <label for="slide5" class="nav-dot"></label>
+
+      <!-- arrows -->
+      <label for="slide1" class="left-arrow"> &lt; </label>
+      <label for="slide2" class="left-arrow"> &lt; </label>
+      <label for="slide3" class="left-arrow"> &lt; </label>
+      <label for="slide4" class="left-arrow"> &lt; </label>
+      <label for="slide5" class="left-arrow"> &lt; </label>
+
+      <label for="slide1" class="right-arrow"> &gt; </label>
+      <label for="slide2" class="right-arrow"> &gt; </label>
+      <label for="slide3" class="right-arrow"> &gt; </label>
+      <label for="slide4" class="right-arrow"> &gt; </label>
+      <label for="slide5" class="right-arrow"> &gt; </label>
+
+      <div class="carousel">
+        <ul>
+          <li>
+            <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/canyon.jpg" />
+          </li>
+          <li>
+            <img src="https://m.media-amazon.com/images/I/31Y+R3Y3nvL._SL1000_.jpg" alt="">
+          </li>
+          <li>
+            <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+          </li>
+          <li>
+            <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+          </li>
+          <li>
+            <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-157575/d224d518da6c26515a470a9b7e490df8/157575-honey-bun-baby.jpg?fm=jpg&fl=progressive&q=50&w=1200" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="center">
+    <div style="width: 75%;">
+      Use the arrows or the dots to navigate between the slides ! ✨ <br> <br>
+      <span style="color: rgb(200, 200, 230); font-family: 'Quicksand';">
+        This image slider was <u>highly inspired</u> by <a target="_blank" style="color: white;" href="https://codepen.io/GhostRider/pen/qFxfs">this one</a>. <br>
+        I made sure to <u>comment</u> the style sheet to explain the <u>tricks</u> so you can <u>replicate</u> it or
+        use it in your code !
+      </span>
+    </div>
+  </div>
+
+  <footer class="signature">
+    <span class="name"> osef. ©</span>
+    <span class="dot">•</span>
+    More stuff on <a target="blank" href="http://osef-art.github.io">my website</a> ! 💜
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

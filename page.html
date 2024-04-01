@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="page.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-toggler fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="https://newprojects.99acres.com/projects/aparna_construction/aparna_kanopy/logo_naya.jpg"
+                    class="navbar-image">
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="page.html">Home</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="aboutus.html">About Society</a>
+                            <a class="dropdown-item" href="aboutus.html">Management Committee</a>
+                            <a class="dropdown-item" href="aboutus.html">Block Representatives</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="contact.html">Directory</a>
+                            <a class="dropdown-item" href="contact.html">Location Map</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="documents.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Documents
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="documents.html">Bye-Laws</a>
+                            <a class="dropdown-item" href="documents.html">Rules & Guidelines</a>
+                            <a class="dropdown-item" href="documents.html">SOPs</a>
+                            <a class="dropdown-item" href="documents.html">New to Society</a>
+                            <a class="dropdown-item" href="documents.html">Downloads </a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="happenings.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Happenings
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="happenings.html">News & Circulars</a>
+                            <a class="dropdown-item" href="happenings.html"> Photo Gallery</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                    <a class="nav-link" href="classifieds.html">Classifieds</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="login.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Member Login
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="login.html">Member Forum</a>
+                            <a class="dropdown-item" href="login.html">Complaints</a>
+                            <a class="dropdown-item" href="login.html">Feedback</a>
+                            <a class="dropdown-item" href="login.html">Post Classified</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="homepage" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h1 class="mb-5 text-center welcome-msg">Welcome to Aparna Kanopy Tulip,
+                        Your dream home, within your grip!</h1>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100"
+                                    src="https://superadmin.homes247.in/images/uploadPropertyImgs/1621677924---27.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://img.staticmb.com/mbphoto/property/cropped_images/2023/Oct/24/Photo_h600_w900/2023/Oct/24/69710143_17_PHOTO-2022-12-28-18-34-20-26-_600_900.jpg"
+                                    alt="second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                    src="https://housing-images.n7net.in/012c1500/ba0e0898737462e703b5148c05afd44f/v0/fs-large.jpeg"
+                                    alt="third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="happenings.html" class="view-more-button">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 mb-5">
+                <h2 class="why-choose-us">Why Choose Us?</h2>
+                <p class="why-choose-us-para">
+                    Imagine stepping into a vibrant community crafted for modern living. Our spacious residences offer
+                    the perfect blend of comfort and style, while the surrounding landscaped gardens and extensive
+                    clubhouse create an oasis of relaxation. With well-regarded schools and hospitals nearby, your
+                    everyday needs are taken care of. Aparna Kanopy Tulip puts you at the heart of it all, close to
+                    Gundlapochampalli station for seamless connectivity. Don't miss out on this opportunity to elevate
+                    your lifestyle - explore your dream home at Aparna Kanopy Tulip today.
+                </p>
+                <ul class="why-choose-us-para">
+                    <p class="why-choose-us"><b>Why Aparna Kanopy Tulip?</b></p>
+                    <li>Rainwater harvesting are some of the prominent amenities</li>
+                    <li>Schools, hospitals in close vicinity</li>
+                    <li>1.14k sq.m clubhouse extensive land</li>
+                    <li>Extensive landscaped parks</li>
+                    <li>Close to gundlapochampally railway station</li>
+                </ul>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="bg-dark p-3 text-center">
+            <img src="https://newprojects.99acres.com/projects/aparna_construction/aparna_kanopy/logo_naya.jpg"
+                class="navbar-image">
+            <h3 class="text-white mt-2" style="font-size: 20px; font-family: 'Roboto';">Aparna Kanopy Tulip</h3>
+            <h1 class="text-white contact-us">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg> 324235646
+            </h1>
+        </div>
+    </div>
+</body>
+
+</html>

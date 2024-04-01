@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://amazingarchitecture.com/storage/2861/urban_oasis-_gated_community_living_housing_the_grid_architects.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      overflow-x: hidden; /* Add this line to hide horizontal overflow */
+      background-attachment: fixed; /* Keep the background image fixed */
+      background-color: rgb(0, 0, 0); /* Grey color overlay */
+    }
+    body::before {
+      content: "";
+      position: fixed; /* Change position to fixed */
+      top: 0;
+      left: 0;
+      width: 100vw; /* Use viewport width */
+      height: 100vh; /* Use viewport height */
+      background-color: rgba(0, 0, 0, 0.475); /* Adjust the alpha value to change transparency */
+      z-index: -1; /* Ensure the overlay is behind other content */
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0000017d !important; /* Set navbar background color */
+      z-index: 1000;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    .articles {
+      display: grid;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: 24px;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 70px; /* Add margin to create gap between navbar and cards */
+    }
+
+    article {
+      --img-scale: 1.001;
+      --title-color: black;
+      --link-icon-translate: -20px;
+      --link-icon-opacity: 0;
+      position: relative;
+      border-radius: 16px;
+      box-shadow: none;
+      background: #fff;
+      transform-origin: center;
+      transition: all 0.4s ease-in-out;
+      overflow: hidden;
+    }
+
+    article h2 {
+      margin: 0 0 18px 0;
+      font-family: "Bebas Neue", cursive;
+      font-size: 1.9rem;
+      letter-spacing: 0.06em;
+      color: var(--title-color);
+      transition: color 0.3s ease-out;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    article img {
+      max-width: 100%;
+      transform-origin: center;
+      transform: scale(var(--img-scale));
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .article-body {
+      padding: 24px;
+    }
+
+    article a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: #28666e;
+    }
+
+    article a:focus {
+      outline: 1px dotted #28666e;
+    }
+
+    article a .icon {
+      min-width: 24px;
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+      transform: translateX(var(--link-icon-translate));
+      opacity: var(--link-icon-opacity);
+      transition: all 0.3s;
+    }
+
+    article:has(:hover, :focus) {
+      --img-scale: 1.1;
+      --title-color: #28666e;
+      --link-icon-translate: 0;
+      --link-icon-opacity: 1;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .sr-only:not(:focus):not(:active) {
+      clip: rect(0 0 0 0); 
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="https://newprojects.99acres.com/projects/aparna_construction/aparna_kanopy/logo_naya.jpg" alt="Logo"></a> <!-- Replace 'your-logo-url.jpg' with your logo URL -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="aboutsocity.html">About Society</a>
+            <a class="dropdown-item" href="aboutsocity.html">Management Committee</a>
+            <a class="dropdown-item" href="aboutsocity.html">Block Representatives</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="happenings.html" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Happenings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="newss.html">News </a>
+              <a class="dropdown-item" href="happenings.html"> Circulars</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="documents.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Documents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="documents.html">Bye-Laws</a>
+            <a class="dropdown-item" href="documents.html">Rules & Guidelines</a>
+            <a class="dropdown-item" href="documents.html">SOPs</a>
+            <a class="dropdown-item" href="documents.html">New to Society</a>
+            <a class="dropdown-item" href="documents.html">Downloads </a>
+        </div>
+    </li>
+        <li class="nav-item">
+          <a class="nav-link" href="report_issue.html">Facilities</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="contactDropdown">
+            <a class="dropdown-item" href="contact.html">Directory</a>
+            <a class="dropdown-item" href="contact.html">Location Map</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Updated articles section -->
+  <section class="articles">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://www.vbowa.com/wp-content/uploads/2017/06/gym.jpg" alt="Gym">
+        </figure>
+        <div class="article-body">
+          <h2>Gym</h2>
+          <p>Gents : 6:00 am to 8:00 am & 6:00 pm to 8:00 pm</p>
+          <p>Ladies : 9:00 am to 11:00 am & 4:00 pm to 6:00 pm</p>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://housing-images.n7net.in/012c1500/3483d7dee7ec47a8d62b0d997c4e0ad1/v0/fs.jpeg" alt="Indoor Games">
+        </figure>
+        <div class="article-body">
+          <h2>Indoor Games</h2>
+          <p>Gents : 6:00 am to 8:00 am & 6:00 pm to 8:00 pm</p>
+          <p>Ladies : 9:00 am to 11:00 am & 4:00 pm to 6:00 pm</p>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://housing-images.n7net.in/012c1500/7ce480e5e627f645a539d95010399874/v0/fs.jpeg" alt="Club House">
+        </figure>
+        <div class="article-body">
+          <h2>Club House</h2>
+          <p>Managed by VBOWA and is a non-profit facility for the benefit of the residents.</p>
+          <p>Exclusive for the residents.</p>
+          <p>Timing: 6:00 am - 9:00 pm</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

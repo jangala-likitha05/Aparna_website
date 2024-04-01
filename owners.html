@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      position: relative;
+      background-image: url('https://amazingarchitecture.com/storage/2861/urban_oasis-_gated_community_living_housing_the_grid_architects.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); 
+    }
+
+    .navbar {
+      background-color:#0000017d!important; /* Set navbar background to transparent */
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #000001;
+    }
+    .dropdown-menu {
+      background-color: #0000017d; /* Set dropdown background to transparent */
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: #fff; /* Set text color in the dropdown to white */
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #28a745; /* Green background color on hover */
+      color: #fff; /* White text color on hover */
+    }
+
+    /* Custom style for cards */
+    .card {
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-overlay {
+      padding: 0;
+    }
+
+    .card-img-overlay p {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .card-title,
+    .card-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-img-overlay img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="https://newprojects.99acres.com/projects/aparna_construction/aparna_kanopy/logo_naya.jpg" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto"> <!-- ml-auto aligns items to the right -->
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Dropdown menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="aboutsocity.html">About Society</a>
+            <a class="dropdown-item" href="aboutsocity.html">Management Committee</a>
+            <a class="dropdown-item" href="aboutsocity.html">Block Representatives</a>
+          </div>
+        </li>
+        <!-- End dropdown menu -->
+        <!-- Happenings dropdown -->
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="happeningsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Happenings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="happeningsDropdown">
+            <a class="dropdown-item" href="happenings.html">News & Circulars</a>
+            <a class="dropdown-item" href="happenings.html">Photo Gallery</a>
+          </div>
+        </div>
+        <!-- End Happenings dropdown -->
+        <!-- Documents dropdown -->
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="documentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Documents
+          </a>
+          <div class="dropdown-menu" aria-labelledby="documentsDropdown">
+            <a class="dropdown-item" href="documents.html">Bye-Laws</a>
+            <a class="dropdown-item" href="documents.html">Rules & Guidelines</a>
+            <a class="dropdown-item" href="documents.html">SOPs</a>
+            <a class="dropdown-item" href="documents.html">New to Society</a>
+            <a class="dropdown-item" href="documents.html">Downloads</a>
+          </div>
+        </div>
+        <!-- End Documents dropdown -->
+        <!-- Facilities -->
+        <li class="nav-item">
+          <a class="nav-link" href="report_issue.html">Facilities</a>
+        </li>
+        <!-- Contact dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="contactDropdown">
+            <a class="dropdown-item" href="contact.html">Directory</a>
+            <a class="dropdown-item" href="contact.html">Location Map</a>
+          </div>
+        </li>
+        <!-- End Contact dropdown -->
+        <!-- Login -->
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container mt-5">
+  <h1 class="text-white">Owners</h1>
+  <div class="row">
+    <!-- Cards -->
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://g-srinagavenkat.github.io/intern/IMG_5884.jpg" class="card-img-top" alt="Card image">
+        <div class="card-img-overlay">
+          <p class="card-text">Phone: <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a><br>Email: <a href="mailto:owner1@example.com" class="text-white">owner1@example.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://g-srinagavenkat.github.io/intern/IMG_5884.jpg" class="card-img-top" alt="Card image">
+        <div class="card-img-overlay">
+          <p class="card-text">Phone: <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a><br>Email: <a href="mailto:owner2@example.com" class="text-white">owner2@example.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://g-srinagavenkat.github.io/intern/IMG_5884.jpg" class="card-img-top" alt="Card image">
+        <div class="card-img-overlay">
+          <p class="card-text">Phone: <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a><br>Email: <a href="mailto:owner3@example.com" class="text-white">owner3@example.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="https://g-srinagavenkat.github.io/intern/IMG_5884.jpg" class="card-img-top" alt="Card image">
+        <div class="card-img-overlay">
+			<p class="card-text">Phone: <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a><br>Email: <a href="mailto:owner3@example.com" class="text-white">owner3@example.com</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Add more cards here -->
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

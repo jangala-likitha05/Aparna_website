@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://amazingarchitecture.com/storage/2861/urban_oasis-_gated_community_living_housing_the_grid_architects.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      overflow-x: hidden; /* Add this line to hide horizontal overflow */
+      background-attachment: fixed; /* Keep the background image fixed */
+      background-color: rgb(0, 0, 0); /* Grey color overlay */
+    }
+    body::before {
+  content: "";
+  position: fixed; /* Change position to fixed */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width */
+  height: 100vh; /* Use viewport height */
+  background-color: rgba(0, 0, 0, 0.475); /* Adjust the alpha value to change transparency */
+  z-index: -1; /* Ensure the overlay is behind other content */
+}
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #0000017d !important; /* Set navbar background color */
+      z-index: 1000;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #28a745;
+    }
+
+    .dropdown-menu {
+      background-color: #0000017d;
+    }
+
+    .dropdown-menu .dropdown-item {
+      color: #fff;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 100px; /* Adjust margin to avoid overlap with navbar */
+    }
+
+    .news-card {
+      flex: 0 0 calc(33.33% - 20px); /* Each card takes up 1/3 of the row with 20px gap */
+      margin: 10px;
+    }
+
+    .news-card .card-body {
+      background-color: #ECE9E6;
+      background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+      box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 1em;
+      overflow: hidden;
+    }
+
+    .news-card .card-title {
+      color: #28a745;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      padding: 1rem;
+    }
+
+    .news-card .card-text {
+      padding: 0 1rem 1rem 1rem;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="https://newprojects.99acres.com/projects/aparna_construction/aparna_kanopy/logo_naya.jpg" alt="Logo"></a> <!-- Replace 'your-logo-url.jpg' with your logo URL -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="aboutsocity.html">About Society</a>
+            <a class="dropdown-item" href="aboutsocity.html">Management Committee</a>
+            <a class="dropdown-item" href="aboutsocity.html">Block Representatives</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="happenings.html" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Happenings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="newss.html">News </a>
+              <a class="dropdown-item" href="happenings.html"> Circulars</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="documents.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Documents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="documents.html">Bye-Laws</a>
+            <a class="dropdown-item" href="documents.html">Rules & Guidelines</a>
+            <a class="dropdown-item" href="documents.html">SOPs</a>
+            <a class="dropdown-item" href="documents.html">New to Society</a>
+            <a class="dropdown-item" href="documents.html">Downloads </a>
+        </div>
+    </li>
+        <li class="nav-item">
+          <a class="nav-link" href="report_issue.html">Facilities</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="contactDropdown">
+            <a class="dropdown-item" href="contact.html">Directory</a>
+            <a class="dropdown-item" href="contact.html">Location Map</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Row container for the news cards -->
+  <div class="row">
+    <!-- News card container 1 -->
+    <div class="news-card">
+      <div class="card news-card">
+        <div class="card-body">
+          <h5 class="card-title">Latest News</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News card container 2 -->
+    <div class="news-card">
+      <div class="card news-card">
+        <div class="card-body">
+          <h5 class="card-title">Latest News</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News card container 3 -->
+    <div class="news-card">
+      <div class="card news-card">
+        <div class="card-body">
+          <h5 class="card-title">Latest News</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the news card divs to create a 3x3 layout -->
+    <!-- Example: -->
+    <div class="news-card">
+      <div class="card news-card">
+        <div class="card-body">
+          <h5 class="card-title">Latest News</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the news card divs to create a 3x3 layout -->
+    <!-- Example: -->
+    <div class="news-card">
+      <div class="card news-card">
+        <div class="card-body">
+          <h5 class="card-title">Latest News</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the news card divs to create a 3x3 layout -->
+    <!-- Example: -->
+    <div class="news-card">
+      <div class="card news-card">
+        <div class="card-body">
+          <h5 class="card-title">Latest News</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
